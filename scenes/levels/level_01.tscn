@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://drg3b57c02sr5"]
+
+[ext_resource type="PackedScene" uid="uid://cdadw7all03uy" path="res://assets/kenney_nature_kit/ground_grass.glb" id="1_i2aat"]
+[ext_resource type="PackedScene" uid="uid://b371m6hrv1nla" path="res://assets/kenney_mini_characters/character-female-c.glb" id="2_2djvx"]
+
+[node name="level 01" type="Node3D" unique_id=689504074]
+
+[node name="ground_grass2" parent="." unique_id=1075402569 instance=ExtResource("1_i2aat")]
+
+[node name="character-female-c2" parent="." unique_id=1082882653 instance=ExtResource("2_2djvx")]
