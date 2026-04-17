@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://brk34kecfdpwf"]
+
+[ext_resource type="PackedScene" uid="uid://d0esdbdoqtmnb" path="res://assets/kenney_nature_kit/mushroom_redTall.glb" id="1_onylo"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_onylo"]
+size = Vector3(0.03662491, 0.17350769, 0.033798218)
+
+[node name="mushroom_redtall" type="StaticBody3D" unique_id=221557913]
+
+[node name="mushroom_redTall2" parent="." unique_id=1383833885 instance=ExtResource("1_onylo")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=820938367]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00057411194, 0.041053772, 0.00020599365)
+shape = SubResource("BoxShape3D_onylo")
+debug_color = Color(0.3767145, 0.47624058, 1, 0.41960785)

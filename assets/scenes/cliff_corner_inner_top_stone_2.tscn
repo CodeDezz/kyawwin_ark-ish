@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://bes2bw0vqnpcj"]
+
+[ext_resource type="PackedScene" uid="uid://dghj0ddiod23j" path="res://assets/kenney_nature_kit/cliff_cornerInnerTop_stone.glb" id="1_tfgr1"]
+
+[node name="cliff_cornerInnerTop_stone2" type="StaticBody3D" unique_id=535861286]
+
+[node name="cliff_cornerInnerTop_stone2" parent="." unique_id=1643338019 instance=ExtResource("1_tfgr1")]

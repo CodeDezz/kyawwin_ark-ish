@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://dt2l8kxkpcjke"]
+
+[ext_resource type="PackedScene" uid="uid://cxf6ww67j3n6y" path="res://assets/done/cliff_blockSlope_stone.glb" id="1_orubd"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_orubd"]
+points = PackedVector3Array(0.5, 1, 0.5000001, 0.5, 0, 0.5000001, -0.5, 1, -0.4999999, -0.5, 1, 0.5000001, -0.5, 0, 0.5000001, -0.5, 0, -0.4999999)
+
+[node name="cliff_blockSlope_stone2" type="StaticBody3D" unique_id=1121620792]
+
+[node name="cliff_blockSlope_stone2" parent="." unique_id=876147695 instance=ExtResource("1_orubd")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1495670054]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, 0.50688803, 0.45717484, 0)
+shape = SubResource("ConvexPolygonShape3D_orubd")

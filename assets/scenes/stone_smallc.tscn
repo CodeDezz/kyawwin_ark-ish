@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://vjc1dv2ympna"]
+
+[ext_resource type="PackedScene" uid="uid://cm70aov3rraqh" path="res://assets/kenney_nature_kit/stone_smallC.glb" id="1_tm8kk"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_8o2xl"]
+points = PackedVector3Array(-3.530085e-05, 2.2559732e-17, -0.1804, 0.067985535, 0.12267201, 0.040508762, 0.18036471, 2.2559732e-17, 0.036517933, -0.1804, 2.2559732e-17, -3.5315752e-05, -0.006074533, 0.12267201, -0.048525766, 0.043899238, 0.12267201, 0.07409538, 0.07713269, 2.2559732e-17, 0.1804, -0.120007664, 2.2559732e-17, 0.11022483, -0.058273286, 0.12267201, 0.03775403, -0.070316434, 0.12267201, 0.015716136)
+
+[node name="stone_smallc" type="StaticBody3D" unique_id=1995577976]
+
+[node name="stone_smallC2" parent="." unique_id=925866483 instance=ExtResource("1_tm8kk")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1690844296]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.05, 0)
+shape = SubResource("ConvexPolygonShape3D_8o2xl")

@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://btbki07yknnys"]
+
+[ext_resource type="PackedScene" uid="uid://bl4q56py51bfx" path="res://assets/flexable_meshes/ground_grass/cliff_blockQuarter_rock.glb" id="1_2nkx3"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_2nkx3"]
+size = Vector3(1, 0.25001, 1)
+
+[node name="cliff_blockQuarter_rock2" type="StaticBody3D" unique_id=557988823]
+
+[node name="cliff_blockQuarter_rock2" parent="." unique_id=1274397764 instance=ExtResource("1_2nkx3")]
+transform = Transform3D(47.253216, 0, 0, 0, 47.253216, 0, 0, 0, 47.253216, 0.022274017, -9.490794, 0.019432068)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1482245851]
+transform = Transform3D(47.253216, 0, 0, 0, 47.253216, 0, 0, 0, 47.253216, 0, -5.370515, 0)
+shape = SubResource("BoxShape3D_2nkx3")

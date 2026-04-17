@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://dpj7tgewkyed7"]
+
+[ext_resource type="PackedScene" uid="uid://do0mg7c7jrppw" path="res://assets/done/bridge_center_stoneRound.glb" id="1_nb3fd"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_nb3fd"]
+size = Vector3(1, 0.20051269, 0.099365234)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ec2nb"]
+size = Vector3(0.7869873, 0.04827881, 1)
+
+[node name="bridge_center_stoneRound2" type="StaticBody3D" unique_id=1322967408]
+
+[node name="bridge_center_stoneRound2" parent="." unique_id=1741369640 instance=ExtResource("1_nb3fd")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0, 0, 0)
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="." unique_id=1415784677]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0.44977176, 0.19849855, -1.8915637e-08)
+shape = SubResource("BoxShape3D_nb3fd")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=944403315]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -0.44759753, 0.19849855, -1.8568803e-08)
+shape = SubResource("BoxShape3D_nb3fd")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="." unique_id=275271298]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0005493164, 0.12484741, 0)
+shape = SubResource("BoxShape3D_ec2nb")
+debug_color = Color(0.9455138, 2.9841065e-06, 0.59439754, 0.41960785)

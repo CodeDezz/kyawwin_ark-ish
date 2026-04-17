@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://dc2v3784hos8b"]
+
+[ext_resource type="PackedScene" uid="uid://dct0adkskga8y" path="res://assets/done/bridge_center_wood.glb" id="1_1manb"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_bdaq0"]
+size = Vector3(0.9001465, 0.19406128, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_xa1xy"]
+size = Vector3(0.09900195, 0.0986402, 0.9992523)
+
+[node name="bridge_center_wood2" type="StaticBody3D" unique_id=384118334]
+
+[node name="bridge_center_wood2" parent="." unique_id=1483993153 instance=ExtResource("1_1manb")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=2127049928]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000156641, 0.053512573, 0)
+shape = SubResource("BoxShape3D_bdaq0")
+debug_color = Color(0, 0.8862745, 0.3372549, 0.41960785)
+
+[node name="sidehandle2" type="CollisionShape3D" parent="." unique_id=713105491]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.44823635, 0.20199883, -0.00089263916)
+shape = SubResource("BoxShape3D_xa1xy")
+debug_color = Color(0.7955861, 0.4245652, 0.0337308, 0.41960785)
+
+[node name="sidehandle" type="CollisionShape3D" parent="." unique_id=1717797968]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.45006365, 0.19950199, -0.00089263916)
+shape = SubResource("BoxShape3D_xa1xy")
+debug_color = Color(0.7955861, 0.4245652, 0.0337308, 0.41960785)

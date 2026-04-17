@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://br3wr1cujru5l"]
+
+[ext_resource type="PackedScene" uid="uid://c5kvjkmu1i3jo" path="res://assets/kenney_nature_kit/cliff_halfCorner_stone.glb" id="1_edxxs"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_t2byd"]
+points = PackedVector3Array(-0.5, -2.0013795e-16, 0.081499994, -0.5, -2.0013795e-16, 0.5, -0.5, 0.39996085, 0.23147343, -0.18616596, -2.0013795e-16, 0.18608403, -0.081499994, -2.0013795e-16, 0.5, -0.5, 0.5, 0.5, -0.29865628, 0.39996085, 0.2986153, -0.5, 0.5, 0.33146936, -0.37366346, 0.5, 0.37358156, -0.23151436, 0.39996085, 0.5, -0.3315103, 0.5, 0.5)
+
+[node name="cliff_halfcorner_stone" type="StaticBody3D" unique_id=24126766]
+
+[node name="cliff_halfCorner_stone2" parent="." unique_id=1285656163 instance=ExtResource("1_edxxs")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1924917368]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.05, 0)
+shape = SubResource("ConvexPolygonShape3D_t2byd")

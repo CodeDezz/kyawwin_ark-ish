@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://crw1rrjn8jspa"]
+
+[ext_resource type="PackedScene" uid="uid://nve52w1tyvs7" path="res://assets/kenney_nature_kit/mushroom_red.glb" id="1_8c7nn"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_1gr7q"]
+size = Vector3(0.09548187, 0.09602356, 0.09080505)
+
+[node name="mushroom_red" type="StaticBody3D" unique_id=1219719848]
+
+[node name="mushroom_red2" parent="." unique_id=967123949 instance=ExtResource("1_8c7nn")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1570672814]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00039291382, -0.00092315674, -0.0005874634)
+shape = SubResource("BoxShape3D_1gr7q")
+debug_color = Color(2.9841065e-06, 0.63410616, 0.43648645, 0.41960785)

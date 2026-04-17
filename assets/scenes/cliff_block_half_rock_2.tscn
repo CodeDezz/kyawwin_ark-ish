@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://cjl07wxlgk5v5"]
+
+[ext_resource type="PackedScene" uid="uid://ds2xt8fugvqds" path="res://assets/kenney_nature_kit/cliff_blockHalf_rock.glb" id="1_qiktf"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_n05m8"]
+size = Vector3(1, 0.50001, 1)
+
+[node name="cliff_blockHalf_rock2" type="StaticBody3D" unique_id=1914040767]
+
+[node name="cliff_blockHalf_rock2" parent="." unique_id=1301823616 instance=ExtResource("1_qiktf")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1520655812]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.20000501, 0)
+shape = SubResource("BoxShape3D_n05m8")

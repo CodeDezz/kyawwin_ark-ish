@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://c1x8jb0jntbqb"]
+
+[ext_resource type="PackedScene" uid="uid://buff5haxc6kt3" path="res://assets/done/tree_oak.glb" id="1_poy2n"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_poy2n"]
+radius = 0.095214844
+height = 1.077868
+
+[node name="tree_oak2" type="StaticBody3D" unique_id=231670478]
+
+[node name="tree_oak2" parent="." unique_id=1383227308 instance=ExtResource("1_poy2n")]
+transform = Transform3D(0.9999919, 1.7623121e-10, -0.0040317, -1.7623121e-10, 1, 3.5433464e-13, 0.0040317, 3.5433464e-13, 0.9999919, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=547866883]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.47157615, 0)
+shape = SubResource("CapsuleShape3D_poy2n")

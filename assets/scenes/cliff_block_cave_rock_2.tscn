@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://dnjlqphw6362v"]
+
+[ext_resource type="PackedScene" uid="uid://cnkarnwsg4i2i" path="res://assets/kenney_nature_kit/cliff_blockCave_rock.glb" id="1_86ggc"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_86ggc"]
+size = Vector3(1, 1.00001, 1)
+
+[node name="cliff_blockCave_rock2" type="StaticBody3D" unique_id=1862272519]
+
+[node name="cliff_blockCave_rock2" parent="." unique_id=838151313 instance=ExtResource("1_86ggc")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=748539860]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.450005, 0)
+shape = SubResource("BoxShape3D_86ggc")

@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://wp3qptipdkdw"]
+
+[ext_resource type="PackedScene" uid="uid://satl087bg02s" path="res://assets/kenney_nature_kit/mushroom_redGroup.glb" id="1_m3yhv"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_7ur32"]
+size = Vector3(0.0695343, 0.070739746, 0.06882858)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_hih0b"]
+size = Vector3(0.06473768, 0.04424286, 0.06434631)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_kt6q2"]
+size = Vector3(0.047273636, 0.17251587, 0.047203064)
+
+[node name="mushroom_redgroup" type="StaticBody3D" unique_id=1828501290]
+
+[node name="mushroom_redGroup2" parent="." unique_id=1256575101 instance=ExtResource("1_m3yhv")]
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="." unique_id=958298120]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.07392314, -0.013214111, 0.05420427)
+shape = SubResource("BoxShape3D_7ur32")
+debug_color = Color(0.79734504, 0.054736502, 0.9999997, 0.41960785)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=360256693]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.06612247, -0.028507233, 0.06137848)
+shape = SubResource("BoxShape3D_hih0b")
+debug_color = Color(0.87187946, 0.27892, 0.5413752, 0.41960785)
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="." unique_id=718992639]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0005660951, 0.03988862, -0.04566574)
+shape = SubResource("BoxShape3D_kt6q2")
+debug_color = Color(0, 0.6479553, 0.20513064, 0.41960785)

@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://cp5otkj2ugies"]
+
+[ext_resource type="PackedScene" uid="uid://bf24hi3lvbqbc" path="res://assets/kenney_nature_kit/cliff_blockQuarter_stone.glb" id="1_wu87x"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_wu87x"]
+size = Vector3(1, 0.25001, 1)
+
+[node name="cliff_blockQuarter_stone2" type="StaticBody3D" unique_id=1865926419]
+
+[node name="cliff_blockQuarter_stone2" parent="." unique_id=1150641935 instance=ExtResource("1_wu87x")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1469307960]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.07500501, 0)
+shape = SubResource("BoxShape3D_wu87x")

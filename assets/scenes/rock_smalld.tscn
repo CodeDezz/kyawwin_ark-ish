@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://cpm1sdot24j7p"]
+
+[ext_resource type="PackedScene" uid="uid://ba1jne368w60v" path="res://assets/done/rock_smallD.glb" id="1_uulod"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_luunf"]
+points = PackedVector3Array(-0.10647768, 0, -0.18435256, -0.21287201, 0, -3.607571e-05, -0.13627476, 0.230912, -3.607571e-05, -0.09218341, 0.230912, -0.076368436, -0.083723545, 0.13692883, -0.14501342, -4.1663647e-05, 0.230912, -0.1180174, 0.106394336, 0, -0.18435256, -0.10647768, 0, 0.1843165, -0.12485602, 0.230912, 0.01977785, 0.06809573, 0.230912, -0.1180174, 0.21287201, 0, -3.607571e-05, -0.0732633, 0.20010413, 0.12682362, 0.106394336, 0, 0.1843165, 0.04525824, 0.230912, 0.11798133, 0.123064026, 0.230912, -0.02280946, 0.20078649, 0.036345582, -3.607571e-05, 0.114770874, 0.230912, 0.037101507, 0.06809573, 0.230912, 0.11798133)
+
+[node name="rock_smalld" type="StaticBody3D" unique_id=696427752]
+
+[node name="rock_smallD2" parent="." unique_id=452574120 instance=ExtResource("1_uulod")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1661513818]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.05, 0)
+shape = SubResource("ConvexPolygonShape3D_luunf")

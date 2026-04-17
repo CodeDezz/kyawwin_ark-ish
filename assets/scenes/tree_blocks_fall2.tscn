@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://bwyrslle5k1xr"]
+
+[ext_resource type="PackedScene" uid="uid://dfxtjpq2ammvg" path="res://assets/done/tree_blocks_fall.glb" id="1_hrrwh"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_wtqk1"]
+size = Vector3(0.13808441, 0.24299145, 0.13589478)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_7ok7i"]
+size = Vector3(0.09183216, 0.33456516, 0.090065)
+
+[node name="tree_blocks_fall2" type="StaticBody3D" unique_id=1643220788]
+
+[node name="tree_blocks_fall2" parent="." unique_id=521217137 instance=ExtResource("1_hrrwh")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1166405898]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000667572, 0.07608557, 0.0005950928)
+shape = SubResource("BoxShape3D_wtqk1")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="." unique_id=127549435]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0006070137, 0.36540937, -0.0002861023)
+shape = SubResource("BoxShape3D_7ok7i")
+debug_color = Color(0.9754619, 0, 0.42274308, 0.41960785)

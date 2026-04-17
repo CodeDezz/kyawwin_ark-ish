@@ -1,0 +1,197 @@
+[gd_scene format=3 uid="uid://drg3b57c02sr5"]
+
+[ext_resource type="PackedScene" uid="uid://b2rfch1raqvg2" path="res://assets/scenes/player.tscn" id="2_2djvx"]
+[ext_resource type="PackedScene" uid="uid://ftq712jyykwu" path="res://assets/kenney_nature_kit/ground_pathOpen.glb" id="3_2djvx"]
+[ext_resource type="PackedScene" uid="uid://btbki07yknnys" path="res://assets/scenes/cliff_block_quarter_rock_2.tscn" id="3_50wog"]
+[ext_resource type="PackedScene" uid="uid://b02843ynk4vhb" path="res://assets/kenney_nature_kit/grass_leafs.glb" id="3_t0hvh"]
+[ext_resource type="PackedScene" uid="uid://csgak7488ar4w" path="res://assets/kenney_nature_kit/grass_leafsLarge.glb" id="4_kfebt"]
+[ext_resource type="PackedScene" uid="uid://5643j2mbmolx" path="res://assets/kenney_nature_kit/tree_plateau.glb" id="4_uvc87"]
+[ext_resource type="PackedScene" uid="uid://bdmoydahrmacl" path="res://assets/kenney_nature_kit/grass_large.glb" id="5_qdh5e"]
+[ext_resource type="PackedScene" uid="uid://cyu5p0mvraq6o" path="res://assets/scenes/platform_grass_2.tscn" id="8_r72dd"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_i2aat"]
+sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+ground_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+
+[sub_resource type="Sky" id="Sky_2djvx"]
+sky_material = SubResource("ProceduralSkyMaterial_i2aat")
+
+[sub_resource type="Environment" id="Environment_uvc87"]
+background_mode = 2
+sky = SubResource("Sky_2djvx")
+tonemap_mode = 2
+glow_enabled = true
+
+[node name="level 01" type="Node3D" unique_id=689504074]
+
+[node name="env_light" type="Node3D" parent="." unique_id=1575621500]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="env_light" unique_id=942373325]
+transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, 0, 69, 0)
+shadow_enabled = true
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="env_light" unique_id=1352240375]
+environment = SubResource("Environment_uvc87")
+
+[node name="ground_floors" type="Node3D" parent="." unique_id=611956711]
+
+[node name="cliff_blockQuarter_rock2" parent="ground_floors" unique_id=557988823 instance=ExtResource("3_50wog")]
+
+[node name="cliff_blockQuarter_rock19" parent="ground_floors" unique_id=1519442839 instance=ExtResource("3_50wog")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -47, 0, 0)
+
+[node name="cliff_blockQuarter_rock20" parent="ground_floors" unique_id=1748457290 instance=ExtResource("3_50wog")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -94, 0, 0)
+
+[node name="cliff_blockQuarter_rock6" parent="ground_floors" unique_id=643858868 instance=ExtResource("3_50wog")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -47)
+
+[node name="cliff_blockQuarter_rock8" parent="ground_floors" unique_id=1663970087 instance=ExtResource("3_50wog")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -47, 0, -47)
+
+[node name="cliff_blockQuarter_rock21" parent="ground_floors" unique_id=671089906 instance=ExtResource("3_50wog")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -94, 0, -47)
+
+[node name="cliff_blockQuarter_rock3" parent="ground_floors" unique_id=633327319 instance=ExtResource("3_50wog")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 47, 0, 0)
+
+[node name="cliff_blockQuarter_rock7" parent="ground_floors" unique_id=1956119404 instance=ExtResource("3_50wog")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 47, 0, -47)
+
+[node name="cliff_blockQuarter_rock4" parent="ground_floors" unique_id=637774539 instance=ExtResource("3_50wog")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 47, 0, 47)
+
+[node name="cliff_blockQuarter_rock5" parent="ground_floors" unique_id=1500770383 instance=ExtResource("3_50wog")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 47)
+
+[node name="cliff_blockQuarter_rock18" parent="ground_floors" unique_id=1228025105 instance=ExtResource("3_50wog")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -47, 0, 47)
+
+[node name="cliff_blockQuarter_rock9" parent="ground_floors" unique_id=471770579 instance=ExtResource("3_50wog")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 94)
+
+[node name="cliff_blockQuarter_rock10" parent="ground_floors" unique_id=1221071309 instance=ExtResource("3_50wog")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -47, 0, 94)
+
+[node name="cliff_blockQuarter_rock11" parent="ground_floors" unique_id=1417115277 instance=ExtResource("3_50wog")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 47, 0, 141)
+
+[node name="cliff_blockQuarter_rock15" parent="ground_floors" unique_id=685032048 instance=ExtResource("3_50wog")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 141)
+
+[node name="cliff_blockQuarter_rock16" parent="ground_floors" unique_id=1378212846 instance=ExtResource("3_50wog")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -47, 0, 141)
+
+[node name="cliff_blockQuarter_rock22" parent="ground_floors" unique_id=763735199 instance=ExtResource("3_50wog")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -94, 0, 47)
+
+[node name="cliff_blockQuarter_rock23" parent="ground_floors" unique_id=365273234 instance=ExtResource("3_50wog")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -94, 0, 94)
+
+[node name="cliff_blockQuarter_rock24" parent="ground_floors" unique_id=2071209498 instance=ExtResource("3_50wog")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -94, 0, 141)
+
+[node name="cliff_blockQuarter_rock17" parent="ground_floors" unique_id=111712431 instance=ExtResource("3_50wog")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -47, 0, -94)
+
+[node name="cliff_blockQuarter_rock25" parent="ground_floors" unique_id=1749721524 instance=ExtResource("3_50wog")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -94, 0, -94)
+
+[node name="cliff_blockQuarter_rock32" parent="ground_floors" unique_id=1440032159 instance=ExtResource("3_50wog")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -141, 0, 0)
+
+[node name="cliff_blockQuarter_rock33" parent="ground_floors" unique_id=1556854852 instance=ExtResource("3_50wog")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -141, 0, -47)
+
+[node name="cliff_blockQuarter_rock34" parent="ground_floors" unique_id=1247172768 instance=ExtResource("3_50wog")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -141, 0, 47)
+
+[node name="cliff_blockQuarter_rock35" parent="ground_floors" unique_id=1804136127 instance=ExtResource("3_50wog")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -141, 0, 94)
+
+[node name="cliff_blockQuarter_rock36" parent="ground_floors" unique_id=1050999780 instance=ExtResource("3_50wog")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -141, 0, 141)
+
+[node name="cliff_blockQuarter_rock37" parent="ground_floors" unique_id=1674091230 instance=ExtResource("3_50wog")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -141, 0, -94)
+
+[node name="cliff_blockQuarter_rock12" parent="ground_floors" unique_id=264207925 instance=ExtResource("3_50wog")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 47, 0, 94)
+
+[node name="cliff_blockQuarter_rock13" parent="ground_floors" unique_id=1381641321 instance=ExtResource("3_50wog")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 47, 0, -94)
+
+[node name="cliff_blockQuarter_rock26" parent="ground_floors" unique_id=245086646 instance=ExtResource("3_50wog")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 94, 0, 0)
+
+[node name="cliff_blockQuarter_rock27" parent="ground_floors" unique_id=2140041583 instance=ExtResource("3_50wog")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 94, 0, -47)
+
+[node name="cliff_blockQuarter_rock28" parent="ground_floors" unique_id=1919100421 instance=ExtResource("3_50wog")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 94, 0, 47)
+
+[node name="cliff_blockQuarter_rock29" parent="ground_floors" unique_id=1823952441 instance=ExtResource("3_50wog")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 94, 0, 141)
+
+[node name="cliff_blockQuarter_rock30" parent="ground_floors" unique_id=723203444 instance=ExtResource("3_50wog")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 94, 0, 94)
+
+[node name="cliff_blockQuarter_rock31" parent="ground_floors" unique_id=372524928 instance=ExtResource("3_50wog")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 94, 0, -94)
+
+[node name="cliff_blockQuarter_rock14" parent="ground_floors" unique_id=1147154924 instance=ExtResource("3_50wog")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -94)
+
+[node name="ground_pathOpen6" parent="ground_floors" unique_id=1475164665 instance=ExtResource("3_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0.13102353, 4)
+
+[node name="ground_pathOpen7" parent="ground_floors" unique_id=581841523 instance=ExtResource("3_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0.13102353, 4)
+
+[node name="ground_pathOpen11" parent="ground_floors" unique_id=1724173898 instance=ExtResource("3_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0.13102353, 2)
+
+[node name="ground_pathOpen12" parent="ground_floors" unique_id=2110287485 instance=ExtResource("3_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0.13102353, 2)
+
+[node name="ground_pathOpen13" parent="ground_floors" unique_id=1528440759 instance=ExtResource("3_2djvx")]
+transform = Transform3D(40.9, 0, 0, 0, 40.9, 0, 0, 0, 40.9, 20, 4.1310234, 2)
+
+[node name="ground_pathOpen21" parent="ground_floors" unique_id=1885075352 instance=ExtResource("3_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0.13102353, 2)
+
+[node name="ground_pathOpen22" parent="ground_floors" unique_id=1017875693 instance=ExtResource("3_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0.13102353, 2)
+
+[node name="ground_pathOpen8" parent="ground_floors" unique_id=1377334795 instance=ExtResource("3_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0.13102353, 3)
+
+[node name="ground_pathOpen20" parent="ground_floors" unique_id=712637358 instance=ExtResource("3_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0.13102353, 3)
+
+[node name="ground_pathOpen9" parent="ground_floors" unique_id=136481093 instance=ExtResource("3_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0.13102353, 3)
+
+[node name="grass_leafs3" parent="ground_floors" unique_id=1175357179 instance=ExtResource("3_t0hvh")]
+transform = Transform3D(4.2769094, 0, 0, 0, 4.2769094, 0, 0, 0, 4.2769094, 3.7416131, 0.25778347, -15.245257)
+
+[node name="grass_leafsLarge2" parent="ground_floors" unique_id=1031333122 instance=ExtResource("4_kfebt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.7971181, 0.5863741, -13.947952)
+
+[node name="player" parent="." unique_id=1394244378 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1.3113416e-07, 0, -1, 0, 1, 0, 1, 0, 1.3113416e-07, 1, 0.44666487, 0)
+
+[node name="tree_plateau2" parent="." unique_id=1398568560 instance=ExtResource("4_uvc87")]
+transform = Transform3D(18.300001, 0, 0, 0, 18.300001, 0, 0, 0, 18.300001, -13, 1, -111)
+
+[node name="grass_large2" parent="." unique_id=1141335506 instance=ExtResource("5_qdh5e")]
+transform = Transform3D(3.2, 0, 0, 0, 3.2, 0, 0, 0, 3.2, 2, 0.20056325, -14)
+
+[node name="grass_large3" parent="." unique_id=649239305 instance=ExtResource("5_qdh5e")]
+transform = Transform3D(3.2, 0, 0, 0, 3.2, 0, 0, 0, 3.2, 3.2364736, 0.20056325, -14)
+
+[node name="grass_large4" parent="." unique_id=2115545862 instance=ExtResource("5_qdh5e")]
+transform = Transform3D(3.2, 0, 0, 0, 3.2, 0, 0, 0, 3.2, 2.6176124, 0.20056325, -15.166301)
+
+[node name="platform_grass2" parent="." unique_id=2054572009 instance=ExtResource("8_r72dd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.29764175, 0.5863739, -12.440022)

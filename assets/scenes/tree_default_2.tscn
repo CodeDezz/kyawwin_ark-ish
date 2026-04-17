@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://bvlvxmfa44w1m"]
+
+[ext_resource type="PackedScene" uid="uid://dxhq0pq6iuamk" path="res://assets/done/tree_default.glb" id="1_nrl2d"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_nrl2d"]
+radius = 0.035803553
+
+[node name="tree_default2" type="StaticBody3D" unique_id=411067014]
+
+[node name="tree_default2" parent="." unique_id=673451313 instance=ExtResource("1_nrl2d")]
+
+[node name="CollisionPolygon3D" type="CollisionPolygon3D" parent="." unique_id=367538421]
+depth = 0.115
+polygon = PackedVector2Array(-0.046873808, 0.7525848, 0.04426968, 0.74998075, 0.06917012, -0.03344492, -0.067706585, -0.031249221)
+debug_color = Color(0.50860023, 0.42461812, 1, 0.41960785)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=2114972743]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.17776549, 0.09834699)
+shape = SubResource("SphereShape3D_nrl2d")
+debug_color = Color(0.9543254, 1.347661e-06, 0.5515211, 0.41960785)
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="." unique_id=2091275773]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.10170521, 0.27102017, -0.021023102)
+shape = SubResource("SphereShape3D_nrl2d")
+debug_color = Color(0.9543254, 1.347661e-06, 0.5515211, 0.41960785)
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="." unique_id=639286008]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.018550739, 0.5227609, -0.09373457)
+shape = SubResource("SphereShape3D_nrl2d")
+debug_color = Color(0.9543254, 1.347661e-06, 0.5515211, 0.41960785)
+
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="." unique_id=1494812634]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.08758004, 0.65837204, 0.0039694235)
+shape = SubResource("SphereShape3D_nrl2d")
+debug_color = Color(0.9543254, 1.347661e-06, 0.5515211, 0.41960785)

@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://b51p7e5q6dkco"]
+
+[ext_resource type="PackedScene" uid="uid://dwdely3fbgfgi" path="res://assets/done/rock_tallI.glb" id="1_bm7tf"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_tunk3"]
+points = PackedVector3Array(-0.06466028, 0, 0.23217553, -0.22809722, 0, 0.13776901, 0.14825426, 0, 0.18385866, -0.04072526, 0.62053114, 0.14626876, -0.03701891, 0.8118, 0.1185877, -0.22809722, 0, 0.0060907304, -0.11525429, 0.8118, 0.073361635, -0.14374411, 0.62053114, 0.086770386, 0.17884289, 0.36211556, 0.10804254, 0.11552222, 0.62053114, 0.10304266, 0.0933734, 0.62053114, 0.11581504, 0.22805257, 0, 0.13776901, 0.06492822, 0.8118, 0.09545195, 0.04344921, 0, -0.23217556, -0.14374411, 0.62053114, 0.003818065, -0.11525429, 0.8118, 0.010317892, 0.22805257, 0, -0.12563297, 0.14369948, 0.62053114, -0.07913424, 0.14369948, 0.62053114, -0.005727127, -0.015986443, 0.8118, -0.0231812, 0.027373448, 0.62053114, -0.14631423, -0.07707435, 0.8118, -0.0231812)
+
+[node name="rock_talli" type="StaticBody3D" unique_id=804658362]
+
+[node name="rock_tallI2" parent="." unique_id=475478760 instance=ExtResource("1_bm7tf")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=525619955]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.05, 0)
+shape = SubResource("ConvexPolygonShape3D_tunk3")

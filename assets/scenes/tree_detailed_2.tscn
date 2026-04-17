@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://cg6my7y7kbf3j"]
+
+[ext_resource type="PackedScene" uid="uid://cnrcxtdpnaw1r" path="res://assets/done/tree_detailed.glb" id="1_u2brc"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_u2brc"]
+radius = 0.06982422
+height = 0.892334
+
+[node name="tree_detailed2" type="StaticBody3D" unique_id=307595340]
+
+[node name="tree_detailed2" parent="." unique_id=2095574507 instance=ExtResource("1_u2brc")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=171141515]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.3848877, -0.0130520165)
+shape = SubResource("CapsuleShape3D_u2brc")
+debug_color = Color(0.9255107, 4.1392446e-05, 0.6778913, 0.41960785)

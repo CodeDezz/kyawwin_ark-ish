@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://b2rfch1raqvg2"]
+
+[ext_resource type="PackedScene" uid="uid://t1xne7tk2q0e" path="res://assets/kenney_mini_characters/character-male-e.glb" id="1_rwm0n"]
+[ext_resource type="Script" uid="uid://b0l3fab45arhp" path="res://scripts/player_movement.gd" id="1_s027a"]
+
+[node name="player" type="CharacterBody3D" unique_id=1394244378]
+script = ExtResource("1_s027a")
+sensitivity = 0.4
+
+[node name="character-male-e2" parent="." unique_id=549620129 instance=ExtResource("1_rwm0n")]
+
+[node name="body" type="CollisionPolygon3D" parent="." unique_id=663297754]
+polygon = PackedVector2Array(-0.15894234, 0.6050715, 0.16526568, 0.60365576, 0.15393972, 0.34457245, 0.3762133, 0.3459882, 0.3804605, 0.2341435, 0.13411915, 0.231312, 0.14827669, 0.001959592, -0.14761627, -0.00087195635, -0.13912171, 0.24263804, -0.38121593, 0.231312, -0.37980014, 0.34881973, -0.15611076, 0.3459882)
+
+[node name="head2" type="Node3D" parent="." unique_id=432295746]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 0.5630208, 0.16004646)
+
+[node name="Camera3D" type="Camera3D" parent="head2" unique_id=910432928]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.3952752e-09, 0, 0.038837433)
+visible = false

@@ -1,0 +1,6 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://bcvx5keu2kpqa"]
+
+[resource]
+resource_name = "dirt"
+albedo_color = Color(0.9490196, 0.74509805, 0.61960787, 1)
+metallic = 1.0

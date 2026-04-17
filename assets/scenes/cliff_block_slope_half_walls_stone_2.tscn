@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://bk1oeij41egxm"]
+
+[ext_resource type="PackedScene" uid="uid://dasrd0dfobecf" path="res://assets/done/cliff_blockSlopeHalfWalls_stone.glb" id="1_jsy27"]
+
+[node name="cliff_blockSlopeHalfWalls_stone2" type="StaticBody3D" unique_id=902561091]
+
+[node name="cliff_blockSlopeHalfWalls_stone2" parent="." unique_id=537338494 instance=ExtResource("1_jsy27")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 0, 0)
+
+[node name="CollisionPolygon3D" type="CollisionPolygon3D" parent="." unique_id=68268372]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.0017685592)
+polygon = PackedVector2Array(-0.5034476, 0.44704533, -0.3356318, 0.45057827, -0.08479118, -0.045803383, 0.08125818, -0.04933639, 0.33739817, 0.44881177, 0.4981482, 0.45057827, 0.49991465, -0.052869305, -0.5034476, -0.051102832)
+debug_color = Color(0.8039216, 0.4509804, 1, 0.41960785)
+
+[node name="CollisionPolygon3D2" type="CollisionPolygon3D" parent="." unique_id=1688058788]
+transform = Transform3D(1, 0, 0, 0, 0.44274265, 0.8966489, 0, -0.8966489, 0.44274265, 0, 0.28729913, -0.15384185)
+depth = 0.0
+polygon = PackedVector2Array(-0.32476258, 0.37451902, 0.32140088, 0.37686238, 0.060805876, -0.73030317, -0.07443993, -0.7334241)
+debug_color = Color(0.1882353, 0.9882353, 0, 0.41960785)

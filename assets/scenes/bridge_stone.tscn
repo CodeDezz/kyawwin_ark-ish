@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://cvb6u8gkkjvx5"]
+
+[ext_resource type="PackedScene" uid="uid://40f52xsb3qk0" path="res://assets/kenney_nature_kit/bridge_stone.glb" id="1_0abm5"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_4anfg"]
+size = Vector3(0.8408356, 0.10754585, 0.90270996)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_0abm5"]
+size = Vector3(1.0443726, 0.10269928, 0.7992554)
+
+[node name="bridge_stone" type="StaticBody3D" unique_id=1346535861]
+
+[node name="bridge_stone2" parent="." unique_id=1930326281 instance=ExtResource("1_0abm5")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=2055544190]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.000541687, 0.09643459, -0.0005493164)
+shape = SubResource("BoxShape3D_4anfg")
+debug_color = Color(0.8177711, 0.0018888431, 0.97225434, 0.41960785)
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="." unique_id=1124260422]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0011901855, 0.00078201294, 0.002166748)
+shape = SubResource("BoxShape3D_0abm5")
+debug_color = Color(0.57318735, 0.55590624, 7.70092e-07, 0.41960785)

@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://b2rfch1raqvg2"]
+
+[ext_resource type="PackedScene" uid="uid://t1xne7tk2q0e" path="res://assets/kenney_mini_characters/character-male-e.glb" id="1_rwm0n"]
+[ext_resource type="Script" uid="uid://c1es54kuqvsfc" path="res://scripts/player_control.gd" id="1_s027a"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_s027a"]
+
+[node name="player" type="CharacterBody3D" unique_id=1394244378]
+transform = Transform3D(0.9588465, 0, 0, 0, 0.9588465, 0, 0, 0, 0.9588465, 0, 0, 0)
+collision_layer = 2
+script = ExtResource("1_s027a")
+
+[node name="character-male-e2" parent="." unique_id=1187343533 instance=ExtResource("1_rwm0n")]
+transform = Transform3D(-3.283143, 0, -2.8702146e-07, 0, 3.283143, 0, 2.8702146e-07, 0, -3.283143, -3.715465e-05, -0.48656073, -0.025468184)
+
+[node name="head2" type="Node3D" parent="." unique_id=432295746]
+transform = Transform3D(0.26747286, 0, 0, 0, 0.26747286, 0, 0, 0, 0.26747286, 0, 1.3309197, 0)
+
+[node name="Camera3D" type="Camera3D" parent="head2" unique_id=1795836971]
+transform = Transform3D(3.8991594, 0, 3.6948222e-13, 0, 3.8991594, 0, -3.6948222e-13, 0, 3.8991594, 0, 0, 0)
+size = 0.37313035
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1063634934]
+transform = Transform3D(0.9999998, 0, 0, 0, 0.9999998, 0, 0, 0, 0.9999998, 0, 0.54028547, 0)
+shape = SubResource("CapsuleShape3D_s027a")
