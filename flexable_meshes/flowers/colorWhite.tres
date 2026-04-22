@@ -1,0 +1,5 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://bli4yiqre1f0l"]
+
+[resource]
+resource_name = "colorWhite"
+metallic = 1.0

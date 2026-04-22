@@ -1,0 +1,40 @@
+[gd_scene format=3 uid="uid://dlde4mqedcoy6"]
+
+[ext_resource type="PackedScene" uid="uid://b6ma5hb25x3dm" path="res://assets/scenes/stone_smalla.tscn" id="1_7lfu3"]
+[ext_resource type="PackedScene" uid="uid://cek3rpjk7w273" path="res://assets/scenes/stone_smallb.tscn" id="2_efgkq"]
+[ext_resource type="PackedScene" uid="uid://vjc1dv2ympna" path="res://assets/scenes/stone_smallc.tscn" id="3_q7r73"]
+
+[node name="campfire_stone" type="Node3D" unique_id=544560559]
+
+[node name="stone_smalla" parent="." unique_id=621975601 instance=ExtResource("1_7lfu3")]
+transform = Transform3D(-2.480826, 0, -2.446341, 0, 3.4841185, 0, 2.446341, 0, -2.480826, -1.530631, 0, -0.58496046)
+
+[node name="stone_smalla3" parent="." unique_id=650780845 instance=ExtResource("1_7lfu3")]
+transform = Transform3D(3.484119, 0, 0, 0, 3.484119, 0, 0, 0, 3.484119, 0.82827866, 0, -1.5034382)
+
+[node name="stone_smalla4" parent="." unique_id=1371827032 instance=ExtResource("1_7lfu3")]
+transform = Transform3D(3.1377697, 0, -1.5144256, 0, 3.4841187, 0, 1.5144256, 0, 3.1377697, 1.2372586, 0, 1.1314427)
+
+[node name="stone_smallb" parent="." unique_id=296498195 instance=ExtResource("2_efgkq")]
+transform = Transform3D(-1.9803597, 0, 2.0942454, 0, 2.8823054, 0, -2.0942454, 0, -1.9803597, -0.9473069, 0, -1.4102858)
+
+[node name="stone_smallb4" parent="." unique_id=1245994037 instance=ExtResource("2_efgkq")]
+transform = Transform3D(2.156852, 0, 1.9119823, 0, 2.8823054, 0, -1.9119823, 0, 2.156852, 0.4475009, 0, 1.4488598)
+
+[node name="stone_smallb2" parent="." unique_id=636064169 instance=ExtResource("2_efgkq")]
+transform = Transform3D(-1.9792631, 0, 2.095282, 0, 2.8823056, 0, -2.095282, 0, -1.9792631, 1.5195881, 0, -0.89672756)
+
+[node name="stone_smallb3" parent="." unique_id=580529679 instance=ExtResource("2_efgkq")]
+transform = Transform3D(-1.9792631, 0, 2.095282, 0, 2.8823056, 0, -2.095282, 0, -1.9792631, -1.4752022, 0, 0.3384274)
+
+[node name="stone_smallc" parent="." unique_id=1995577976 instance=ExtResource("3_q7r73")]
+transform = Transform3D(-2.7015057, 0, 2.0321844, 0, 3.3805187, 0, -2.0321844, 0, -2.7015057, -0.21678658, 0, -1.641538)
+
+[node name="stone_smallc3" parent="." unique_id=1156056545 instance=ExtResource("3_q7r73")]
+transform = Transform3D(-2.7015057, 0, 2.0321844, 0, 3.3805187, 0, -2.0321844, 0, -2.7015057, -1.0936769, 0, 1.3073134)
+
+[node name="stone_smallc4" parent="." unique_id=1531028790 instance=ExtResource("3_q7r73")]
+transform = Transform3D(-2.7015057, 0, 2.0321844, 0, 3.3805187, 0, -2.0321844, 0, -2.7015057, -0.2884411, 0, 1.5374639)
+
+[node name="stone_smallc2" parent="." unique_id=1184850971 instance=ExtResource("3_q7r73")]
+transform = Transform3D(-1.282759, 0, 3.1276891, 0, 3.3805187, 0, -3.1276891, 0, -1.282759, 1.6456405, 0, 0.22464263)

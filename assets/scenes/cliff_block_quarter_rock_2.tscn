@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://btbki07yknnys"]
 
-[ext_resource type="PackedScene" uid="uid://bl4q56py51bfx" path="res://assets/flexable_meshes/ground_grass/cliff_blockQuarter_rock.glb" id="1_2nkx3"]
+[ext_resource type="PackedScene" uid="uid://bl4q56py51bfx" path="res://flexable_meshes/ground_grass/cliff_blockQuarter_rock.glb" id="1_2nkx3"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_2nkx3"]
 size = Vector3(1, 0.25001, 1)

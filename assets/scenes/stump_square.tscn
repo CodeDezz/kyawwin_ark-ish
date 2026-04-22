@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://kg4n10d0i4nw"]
+
+[ext_resource type="PackedScene" uid="uid://berbqfcjpj2w5" path="res://assets/kenney_nature_kit/stump_square.glb" id="1_6pde4"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_v7ojw"]
+size = Vector3(0.28334808, 0.28442383, 0.28149414)
+
+[node name="stump_square" type="StaticBody3D" unique_id=757290880]
+
+[node name="stump_square2" parent="." unique_id=444260879 instance=ExtResource("1_6pde4")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1232613110]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0016517639, 0.107299805, -0.00012207031)
+shape = SubResource("BoxShape3D_v7ojw")
+debug_color = Color(0.4251652, 0.6030968, 3.85046e-07, 0.41960785)

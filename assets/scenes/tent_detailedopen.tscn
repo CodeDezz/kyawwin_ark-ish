@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://cmgnh8pwkutqt"]
+
+[ext_resource type="PackedScene" uid="uid://dlgimo7ai02lh" path="res://assets/kenney_nature_kit/tent_detailedOpen.glb" id="1_gbnh4"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_jovgg"]
+points = PackedVector3Array(-0.13694301, -2.8199662e-16, -0.3482, -0.437464, -2.8199662e-16, -0.28864408, -0.437464, 0.11095186, -0.28864408, -0.2738004, 0.11095186, -0.31825897, 0, 0.51795846, -0.31825897, 0.13685733, -2.8199662e-16, -0.3482, -0.437464, -2.8199662e-16, 0.28975925, -0.437464, 0.11095186, 0.28975925, -0.014216721, 0.5611308, -0.28864408, 0.014131069, 0.5611308, -0.28864408, 0.437464, 0.11095186, -0.28864408, 0.27371472, 0.11095186, -0.31825897, 0.437464, -2.8199662e-16, -0.28864408, -0.2738004, -2.8199662e-16, 0.31819996, -0.2738004, 0.11095186, 0.31819996, 0, 0.51795846, 0.31819996, -0.014216721, 0.5611308, 0.28975925, 0.014131069, 0.5611308, 0.28975925, 0.437464, 0.11095186, 0.28975925, 0.437464, -2.8199662e-16, 0.28975925, 0.27371472, -2.8199662e-16, 0.31819996, 0.27371472, 0.11095186, 0.31819996)
+
+[node name="tent_detailedopen" type="StaticBody3D" unique_id=1517380828]
+
+[node name="tent_detailedOpen2" parent="." unique_id=1596713322 instance=ExtResource("1_gbnh4")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1815563291]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.05, 0)
+shape = SubResource("ConvexPolygonShape3D_jovgg")

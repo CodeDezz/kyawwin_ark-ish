@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://3ckq37e5a4jv"]
+
+[ext_resource type="PackedScene" uid="uid://xk0ekkhamx7g" path="res://assets/kenney_nature_kit/log_stack.glb" id="1_sqpr0"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_pkl3i"]
+radius = 0.088378906
+height = 0.6694045
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_jtpu6"]
+radius = 0.08496094
+height = 0.6736908
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_wrgyv"]
+radius = 0.08691406
+height = 0.7136204
+
+[node name="log_stack" type="StaticBody3D" unique_id=14719894]
+
+[node name="log_stack2" parent="." unique_id=630445424 instance=ExtResource("1_sqpr0")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=2116230315]
+transform = Transform3D(0.9722924, -0.23376781, -1.0218315e-08, 0, -4.371139e-08, 1, -0.23376781, -0.9722924, -4.250025e-08, -0.006812171, 0.2103453, -0.003969261)
+shape = SubResource("CapsuleShape3D_pkl3i")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="." unique_id=652247174]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, -0.09960844, 0.032388423, 0.0008357763)
+shape = SubResource("CapsuleShape3D_jtpu6")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="." unique_id=389213776]
+transform = Transform3D(1, 0, 0, 0, 0, 1.0000001, 0, -1.0000001, 0, 0.089612156, 0.039046094, 0.00012102538)
+shape = SubResource("CapsuleShape3D_wrgyv")

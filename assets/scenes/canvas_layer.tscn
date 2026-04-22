@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://jokpdfobfyak"]
+
+[ext_resource type="Script" uid="uid://dtrhixsjcvgn7" path="res://canvas_layer.gd" id="1_plp1x"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_s027a"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_14505"]
+bg_color = Color(0.48702455, 0.498362, 0.3253409, 1)
+
+[node name="CanvasLayer" type="CanvasLayer" unique_id=910945249]
+script = ExtResource("1_plp1x")
+
+[node name="hungertime" type="Timer" parent="." unique_id=562480204]
+wait_time = 100.0
+autostart = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1868199181]
+offset_right = 196.0
+offset_bottom = 23.0
+
+[node name="Label" type="Label" parent="VBoxContainer" unique_id=1180329958]
+layout_mode = 2
+text = "Hunger"
+
+[node name="ProgressBar" type="ProgressBar" parent="VBoxContainer" unique_id=737954784]
+layout_mode = 2
+theme_override_styles/background = SubResource("StyleBoxFlat_s027a")
+theme_override_styles/fill = SubResource("StyleBoxFlat_14505")
+value = 95.0

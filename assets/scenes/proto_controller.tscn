@@ -13,6 +13,20 @@ height = 1.8
 radius = 0.4
 height = 1.8
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nrc5j"]
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(1, 0.81960785, 0, 1)
+expand_margin_left = 3.0
+expand_margin_top = 3.0
+expand_margin_right = 3.0
+expand_margin_bottom = 3.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_k4tna"]
+bg_color = Color(1, 0.7647059, 0, 1)
+
 [node name="ProtoController" type="CharacterBody3D" unique_id=2080283354]
 script = ExtResource("1_ucva2")
 
@@ -30,3 +44,16 @@ shape = SubResource("CapsuleShape3D_iof21")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.7, 0)
 
 [node name="Camera3D" type="Camera3D" parent="Head" unique_id=2124481425]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=527696671]
+
+[node name="hungerbar" type="ProgressBar" parent="CanvasLayer" unique_id=1365324752]
+offset_left = 3.0
+offset_top = 616.0
+offset_right = 332.0
+offset_bottom = 645.0
+theme_override_styles/background = SubResource("StyleBoxFlat_nrc5j")
+theme_override_styles/fill = SubResource("StyleBoxFlat_k4tna")
+value = 75.0
+
+[node name="Timer" type="Timer" parent="." unique_id=1698563708]

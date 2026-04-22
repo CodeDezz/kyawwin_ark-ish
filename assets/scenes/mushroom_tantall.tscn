@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://5y8lx6pam1j0"]
+
+[ext_resource type="PackedScene" uid="uid://cyi85we8sp3st" path="res://flexable_meshes/mushroom_tan/mushroom_tanTall.glb" id="1_grkcs"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_od41q"]
+size = Vector3(0.03546524, 0.17428589, 0.033935547)
+
+[node name="mushroom_tantall" type="StaticBody3D" unique_id=436896416]
+
+[node name="mushroom_tanTall2" parent="." unique_id=1407284239 instance=ExtResource("1_grkcs")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1270860795]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00012779236, 0.04069519, -0.0020751953)
+shape = SubResource("BoxShape3D_od41q")
+debug_color = Color(0.5393321, 0.5681555, 3.85046e-07, 0.41960785)

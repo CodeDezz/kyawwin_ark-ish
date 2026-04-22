@@ -1,0 +1,8 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://cwo26uxti4qig"]
+
+[resource]
+resource_name = "colorTan"
+albedo_color = Color(0.6796908, 0.5351068, 0.44114825, 1)
+metallic = 1.0
+normal_scale = 16.0
+clearcoat = 0.3

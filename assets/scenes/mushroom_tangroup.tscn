@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://cfvh4j53cxfp8"]
+
+[ext_resource type="PackedScene" uid="uid://dk0gf71j1sn3p" path="res://flexable_meshes/mushroom_tan/mushroom_tanGroup.glb" id="1_wjcob"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_h2mrw"]
+size = Vector3(0.06285858, 0.06858826, 0.06571865)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_1gmbn"]
+size = Vector3(0.042951584, 0.17402649, 0.039423913)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_rsi7b"]
+size = Vector3(0.062045097, 0.03930664, 0.058547974)
+
+[node name="mushroom_tangroup" type="StaticBody3D" unique_id=595997828]
+
+[node name="mushroom_tanGroup2" parent="." unique_id=631782109 instance=ExtResource("1_wjcob")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=101852599]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.07258758, -0.010765076, 0.054521084)
+shape = SubResource("BoxShape3D_h2mrw")
+debug_color = Color(0.2836037, 0.63115406, 0, 0.41960785)
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="." unique_id=1885591416]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.580353e-05, 0.039619446, -0.045121513)
+shape = SubResource("BoxShape3D_1gmbn")
+debug_color = Color(0.1254902, 0, 1, 0.41960785)
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="." unique_id=366192057]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.06646395, -0.02746582, 0.06328583)
+shape = SubResource("BoxShape3D_rsi7b")
+debug_color = Color(0.7592169, 0.45351315, 0, 0.41960785)

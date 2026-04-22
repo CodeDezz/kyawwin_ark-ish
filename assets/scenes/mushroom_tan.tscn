@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://bc16yrq1m230o"]
+
+[ext_resource type="PackedScene" uid="uid://cpc0bs7nn6w6f" path="res://flexable_meshes/mushroom_tan/mushroom_tan.glb" id="1_0ys0c"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_wug1i"]
+size = Vector3(0.09559631, 0.05883789, 0.09458923)
+
+[node name="mushroom_tan" type="StaticBody3D" unique_id=1511044702]
+
+[node name="mushroom_tan2" parent="." unique_id=2001397621 instance=ExtResource("1_0ys0c")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=85489455]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00012636185, -0.016479492, -8.392334e-05)
+shape = SubResource("BoxShape3D_wug1i")
