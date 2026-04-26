@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://cco4xtml78c8y"]
+
+[ext_resource type="PackedScene" uid="uid://dbra2ychyvick" path="res://assets/kenney_nature_kit/stone_tallH.glb" id="1_chjg1"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_yiii5"]
+points = PackedVector3Array(0, 0, 0.33193597, -0.287465, 0, 0.165903, 0.287465, 0, 0.165903, 0.06697011, 0.71077603, 0.14439344, 0, 0.71077603, 0.18305865, -0.13523462, 0.71077603, 0.1050134, -0.287465, 0, -0.16596799, 0.287465, 0, -0.16596799, 0.13517833, 0.71077603, 0.072651595, 0.15414381, 0.5870721, 0.10884744, -0.13523462, 0.71077603, 0.029177606, 0, 0, -0.33193597, -0.23000577, 0.20204519, -0.13282637, 0.2299495, 0.20204519, -0.13282637, 0.13517833, 0.71077603, 0.0604347, -0.061454937, 0.71077603, -0.028202862, -0.22415292, 0.22256975, -0.12860245, 0, 0.20204519, -0.26558778, -0.16230406, 0.33187175, -0.1240536, -0.09662832, 0.33187175, -0.162004)
+
+[node name="stone_tallh" type="StaticBody3D" unique_id=1329216681]
+
+[node name="stone_tallH2" parent="." unique_id=1373724015 instance=ExtResource("1_chjg1")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=118847795]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.05, 0)
+shape = SubResource("ConvexPolygonShape3D_yiii5")

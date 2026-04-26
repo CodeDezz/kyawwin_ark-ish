@@ -2,6 +2,13 @@
 
 [ext_resource type="PackedScene" uid="uid://lfjpuoxaubmk" path="res://assets/kenney_nature_kit/cliff_cornerInnerTop_rock.glb" id="1_06m37"]
 
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_06m37"]
+points = PackedVector3Array(0.5, 1, 0.5, 0.5, 0, 0.5, 0.5, 1, 0.33144087, -0.5, 1, 0.5, 0.5, 0, 0.33144087, -0.5, 0, 0.5, 0.5, 0.8999609, 0.23140174, -0.33153877, 1, -0.5, -0.5, 1, -0.5, -0.33153877, 0, -0.5, -0.5, 0, -0.5, -0.23159748, 0.8999609, -0.5)
+
 [node name="cliff_cornerInnerTop_rock2" type="StaticBody3D" unique_id=197938464]
 
 [node name="cliff_cornerInnerTop_rock2" parent="." unique_id=1835612668 instance=ExtResource("1_06m37")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=673430965]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.05, 0)
+shape = SubResource("ConvexPolygonShape3D_06m37")

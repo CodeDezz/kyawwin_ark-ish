@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://dcxnke4glinrs"]
+
+[ext_resource type="PackedScene" uid="uid://06ltkij8betr" path="res://assets/kenney_nature_kit/log.glb" id="1_r2dnv"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_t1e5l"]
+radius = 0.107910156
+height = 0.76291656
+
+[node name="log" type="StaticBody3D" unique_id=222506347]
+
+[node name="log2" parent="." unique_id=1284114088 instance=ExtResource("1_r2dnv")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1716706391]
+transform = Transform3D(0.769371, -0.00073580275, 0.6388015, 0.6388007, -0.0012141801, -0.76937115, 0.0013418198, 0.99999905, -0.00046404824, -0.003343063, 0.041163612, 0.0026127435)
+shape = SubResource("CapsuleShape3D_t1e5l")

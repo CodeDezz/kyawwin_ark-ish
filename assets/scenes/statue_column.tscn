@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://dtx263sabrjri"]
+
+[ext_resource type="PackedScene" uid="uid://ctxjl1w4fyqha" path="res://flexable_meshes/statues/statue_column.glb" id="1_oyxeq"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_31xoi"]
+size = Vector3(0.3, 0.19873047, 0.3)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_5gwaf"]
+size = Vector3(0.21876526, 0.5984497, 0.22399902)
+
+[node name="statue_column" type="StaticBody3D" unique_id=1878099003]
+
+[node name="statue_column2" parent="." unique_id=851516367 instance=ExtResource("1_oyxeq")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1492598732]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.051235884, 0)
+shape = SubResource("BoxShape3D_31xoi")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="." unique_id=146978582]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.8515038, 0)
+shape = SubResource("BoxShape3D_31xoi")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="." unique_id=177987998]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.000831604, 0.45177513, -0.0004272461)
+shape = SubResource("BoxShape3D_5gwaf")

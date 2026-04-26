@@ -2,30 +2,13 @@
 
 [ext_resource type="PackedScene" uid="uid://satl087bg02s" path="res://assets/kenney_nature_kit/mushroom_redGroup.glb" id="1_m3yhv"]
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_7ur32"]
-size = Vector3(0.0695343, 0.070739746, 0.06882858)
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_hih0b"]
-size = Vector3(0.06473768, 0.04424286, 0.06434631)
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_kt6q2"]
-size = Vector3(0.047273636, 0.17251587, 0.047203064)
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_m3yhv"]
+points = PackedVector3Array(0.0006238967, 0.19620255, -0.11201361, -0.02437029, 0, -0.06864393, -0.061135754, 0.19620255, -0.076382294, -0.014129803, 0.250488, -0.049235806, 0.0006238967, 0.250488, -0.057745524, 0.015377581, 0.250488, -0.049235806, 0.062383533, 0.19620255, -0.076382294, 0.02432482, 0, -0.06864393, -0.1077986, 0, 0.01991184, -0.13632944, 0.09224118, 0.021230593, -0.061135754, 0.19620255, -0.005045019, -0.014129803, 0.250488, -0.0321915, 0.015377581, 0.250488, -0.0321915, 0.062383533, 0.19620255, -0.005045019, 0.13330156, 0.06034172, 0.027824372, 0.09904343, 0, 0.030038893, -0.1077986, 0, 0.08851206, -0.13632944, 0.09224118, 0.09453356, -0.088030234, 0.14802234, 0.066640615, -0.07285425, 0.14802234, 0.075399145, 0.0006238967, 0.250488, -0.02368179, 0.06726624, 0.06034172, 0.14218298, 0.13330156, 0.06034172, 0.10406345, 0.09904343, 0, 0.09488191, -0.07285425, 0.09224118, 0.13120992, 0.034222186, 0, 0.09488191, 0.0006238967, 0.19620255, 0.030611187)
 
 [node name="mushroom_redgroup" type="StaticBody3D" unique_id=1828501290]
 
 [node name="mushroom_redGroup2" parent="." unique_id=1256575101 instance=ExtResource("1_m3yhv")]
 
-[node name="CollisionShape3D2" type="CollisionShape3D" parent="." unique_id=958298120]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.07392314, -0.013214111, 0.05420427)
-shape = SubResource("BoxShape3D_7ur32")
-debug_color = Color(0.79734504, 0.054736502, 0.9999997, 0.41960785)
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=360256693]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.06612247, -0.028507233, 0.06137848)
-shape = SubResource("BoxShape3D_hih0b")
-debug_color = Color(0.87187946, 0.27892, 0.5413752, 0.41960785)
-
-[node name="CollisionShape3D3" type="CollisionShape3D" parent="." unique_id=718992639]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0005660951, 0.03988862, -0.04566574)
-shape = SubResource("BoxShape3D_kt6q2")
-debug_color = Color(0, 0.6479553, 0.20513064, 0.41960785)
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="." unique_id=111231388]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.05, 0)
+shape = SubResource("ConvexPolygonShape3D_m3yhv")

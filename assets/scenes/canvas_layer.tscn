@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://jokpdfobfyak"]
 
-[ext_resource type="Script" uid="uid://dtrhixsjcvgn7" path="res://canvas_layer.gd" id="1_plp1x"]
+[ext_resource type="Script" uid="uid://dtrhixsjcvgn7" path="res://scripts/canvas_layer.gd" id="1_plp1x"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_s027a"]
 

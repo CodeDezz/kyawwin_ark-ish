@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://cvu5d5t3cfd3h"]
+
+[ext_resource type="Script" uid="uid://e1jucdugdb7n" path="res://interact/interactray.gd" id="1_i5sd1"]
+
+[sub_resource type="FontVariation" id="FontVariation_i5sd1"]
+
+[node name="interactray" type="RayCast3D" unique_id=1216242197]
+target_position = Vector3(0, 0, -4)
+script = ExtResource("1_i5sd1")
+
+[node name="prompt" type="Label" parent="." unique_id=1166966964]
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -24.5
+offset_bottom = 24.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 0
+theme_override_constants/outline_size = 4
+theme_override_constants/shadow_outline_size = 0
+theme_override_fonts/font = SubResource("FontVariation_i5sd1")
+theme_override_font_sizes/font_size = 16
+text = "Prompt
+[KEY]"
+horizontal_alignment = 1

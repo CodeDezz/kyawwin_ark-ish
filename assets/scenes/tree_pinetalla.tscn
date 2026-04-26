@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://dsrg7mfhql1su"]
+
+[ext_resource type="PackedScene" uid="uid://b6ebawmdg63iw" path="res://assets/kenney_nature_kit/tree_pineTallA.glb" id="1_2b88h"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_pol22"]
+size = Vector3(0.084472656, 0.6201782, 0.0869751)
+
+[node name="tree_pinetalla" type="StaticBody3D" unique_id=1478703126]
+
+[node name="tree_pineTallA2" parent="." unique_id=748829281 instance=ExtResource("1_2b88h")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=87965841]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0012207031, 0.27059937, -0.0028381348)
+shape = SubResource("BoxShape3D_pol22")

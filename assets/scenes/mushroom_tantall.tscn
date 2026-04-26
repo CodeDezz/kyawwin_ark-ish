@@ -5,6 +5,9 @@
 [sub_resource type="BoxShape3D" id="BoxShape3D_od41q"]
 size = Vector3(0.03546524, 0.17428589, 0.033935547)
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_grkcs"]
+size = Vector3(0.12561035, 0.072257996, 0.1421051)
+
 [node name="mushroom_tantall" type="StaticBody3D" unique_id=436896416]
 
 [node name="mushroom_tanTall2" parent="." unique_id=1407284239 instance=ExtResource("1_grkcs")]
@@ -13,3 +16,7 @@ size = Vector3(0.03546524, 0.17428589, 0.033935547)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00012779236, 0.04069519, -0.0020751953)
 shape = SubResource("BoxShape3D_od41q")
 debug_color = Color(0.5393321, 0.5681555, 3.85046e-07, 0.41960785)
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="." unique_id=25320237]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0006713867, 0.16469193, 0.005241394)
+shape = SubResource("BoxShape3D_grkcs")

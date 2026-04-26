@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://bgfqi2xa2t6rj"]
+
+[ext_resource type="PackedScene" uid="uid://ctxb7167x7s8n" path="res://assets/kenney_nature_kit/crops_cornStageD.glb" id="1_32yqf"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_vjnv7"]
+size = Vector3(0.052856445, 1.2429199, 0.047607422)
+
+[node name="crops_cornstage" type="StaticBody3D" unique_id=770697774]
+
+[node name="crops_cornStageD2" parent="." unique_id=777240244 instance=ExtResource("1_32yqf")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=283652817]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0012817383, 0.5780029, 0.0008544922)
+shape = SubResource("BoxShape3D_vjnv7")

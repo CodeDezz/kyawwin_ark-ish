@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://cctp6k1jvy17e"]
+
+[ext_resource type="PackedScene" uid="uid://1qyvi5608tr7" path="res://assets/kenney_nature_kit/crop_turnip.glb" id="1_g73ot"]
+[ext_resource type="Script" uid="uid://ds4hkrfildnna" path="res://scripts/interactable.gd" id="1_qwgym"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_qwgym"]
+radius = 0.09871636
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_too7s"]
+radius = 0.036621094
+height = 0.1376648
+
+[node name="crop_turnip" type="StaticBody3D" unique_id=1321414771]
+script = ExtResource("1_qwgym")
+prompt_message = null
+prompt_input = null
+
+[node name="crop_turnip2" parent="." unique_id=766058594 instance=ExtResource("1_g73ot")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=2048840115]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.18304443, 0)
+shape = SubResource("SphereShape3D_qwgym")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="." unique_id=761803581]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.015701294, 0)
+shape = SubResource("CapsuleShape3D_too7s")

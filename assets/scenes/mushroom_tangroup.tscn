@@ -2,30 +2,13 @@
 
 [ext_resource type="PackedScene" uid="uid://dk0gf71j1sn3p" path="res://flexable_meshes/mushroom_tan/mushroom_tanGroup.glb" id="1_wjcob"]
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_h2mrw"]
-size = Vector3(0.06285858, 0.06858826, 0.06571865)
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_1gmbn"]
-size = Vector3(0.042951584, 0.17402649, 0.039423913)
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_rsi7b"]
-size = Vector3(0.062045097, 0.03930664, 0.058547974)
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_wjcob"]
+points = PackedVector3Array(0.0006238967, 0.19620255, -0.11201361, -0.02437029, 0, -0.06864393, -0.061135754, 0.19620255, -0.076382294, -0.014129803, 0.250488, -0.049235806, 0.0006238967, 0.250488, -0.057745524, 0.015377581, 0.250488, -0.049235806, 0.062383533, 0.19620255, -0.076382294, 0.02432482, 0, -0.06864393, -0.1077986, 0, 0.01991184, -0.13632944, 0.09224118, 0.021230593, -0.061135754, 0.19620255, -0.005045019, -0.014129803, 0.250488, -0.0321915, 0.015377581, 0.250488, -0.0321915, 0.062383533, 0.19620255, -0.005045019, 0.13330156, 0.06034172, 0.027824372, 0.09904343, 0, 0.030038893, -0.1077986, 0, 0.08851206, -0.13632944, 0.09224118, 0.09453356, -0.088030234, 0.14802234, 0.066640615, -0.07285425, 0.14802234, 0.075399145, 0.0006238967, 0.250488, -0.02368179, 0.06726624, 0.06034172, 0.14218298, 0.13330156, 0.06034172, 0.10406345, 0.09904343, 0, 0.09488191, -0.07285425, 0.09224118, 0.13120992, 0.034222186, 0, 0.09488191, 0.0006238967, 0.19620255, 0.030611187)
 
 [node name="mushroom_tangroup" type="StaticBody3D" unique_id=595997828]
 
 [node name="mushroom_tanGroup2" parent="." unique_id=631782109 instance=ExtResource("1_wjcob")]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=101852599]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.07258758, -0.010765076, 0.054521084)
-shape = SubResource("BoxShape3D_h2mrw")
-debug_color = Color(0.2836037, 0.63115406, 0, 0.41960785)
-
-[node name="CollisionShape3D2" type="CollisionShape3D" parent="." unique_id=1885591416]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.580353e-05, 0.039619446, -0.045121513)
-shape = SubResource("BoxShape3D_1gmbn")
-debug_color = Color(0.1254902, 0, 1, 0.41960785)
-
-[node name="CollisionShape3D3" type="CollisionShape3D" parent="." unique_id=366192057]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.06646395, -0.02746582, 0.06328583)
-shape = SubResource("BoxShape3D_rsi7b")
-debug_color = Color(0.7592169, 0.45351315, 0, 0.41960785)
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1661327712]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.05, 0)
+shape = SubResource("ConvexPolygonShape3D_wjcob")

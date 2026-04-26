@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://ctxjl1w4fyqha"
-path="res://.godot/imported/statue_column.glb-d98e3981d772f5068a60b9cb3eb452e0.scn"
+uid="uid://dx7x8vt34efe"
+path="res://.godot/imported/tree_pineDefaultB.glb-14418dac00472a40340dae73296f7f86.scn"
 
 [deps]
 
-source_file="res://assets/kenney_nature_kit/statue_column.glb"
-dest_files=["res://.godot/imported/statue_column.glb-d98e3981d772f5068a60b9cb3eb452e0.scn"]
+source_file="res://assets/done/tree_pineDefaultB.glb"
+dest_files=["res://.godot/imported/tree_pineDefaultB.glb-14418dac00472a40340dae73296f7f86.scn"]
 
 [params]
 
@@ -24,7 +24,7 @@ nodes/use_node_type_suffixes=true
 meshes/ensure_tangents=true
 meshes/generate_lods=true
 meshes/create_shadow_meshes=true
-meshes/light_baking=2
+meshes/light_baking=1
 meshes/lightmap_texel_size=0.2
 meshes/force_disable_compression=false
 skins/use_named_skins=true

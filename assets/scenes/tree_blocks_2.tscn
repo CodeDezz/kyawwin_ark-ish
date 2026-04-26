@@ -3,7 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://xd8fbs6jq8wf" path="res://assets/done/tree_blocks.glb" id="1_tj1dk"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_tj1dk"]
-size = Vector3(0.11807251, 0.5760269, 0.110012054)
+size = Vector3(0.11807251, 0.57512283, 0.110012054)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_by15w"]
 size = Vector3(0.5897374, 0.5896553, 0.592359)
@@ -14,7 +14,7 @@ size = Vector3(0.5897374, 0.5896553, 0.592359)
 transform = Transform3D(0.9828936, 0, 0, 0, 0.9828936, 0, 0, 0, 0.9828936, 0, 0, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1799353694]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00071263313, 0.23753738, 0.001110509)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00071263313, 0.23708534, 0.001110509)
 shape = SubResource("BoxShape3D_tj1dk")
 
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="." unique_id=1789521258]

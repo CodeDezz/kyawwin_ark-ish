@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://ctxn87pjdhjet"]
+
+[ext_resource type="PackedScene" uid="uid://dx7x8vt34efe" path="res://assets/done/tree_pineDefaultB.glb" id="1_7jjh2"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_qu2ym"]
+size = Vector3(0.107421875, 0.53100586, 0.14160156)
+
+[node name="tree_pinedefaultb" type="StaticBody3D" unique_id=355497009]
+
+[node name="tree_pineDefaultB2" parent="." unique_id=653795333 instance=ExtResource("1_7jjh2")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=616274706]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0048828125, 0.22717285, -0.00048828125)
+shape = SubResource("BoxShape3D_qu2ym")

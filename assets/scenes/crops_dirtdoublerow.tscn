@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://dibsv8lwwx41c"]
+
+[ext_resource type="PackedScene" uid="uid://bclqg6jlp6xll" path="res://assets/kenney_nature_kit/crops_dirtDoubleRow.glb" id="1_g8rd6"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_0w2t1"]
+points = PackedVector3Array(-0.5, 0, -0.438, -0.5, 0, 0.4352692, -0.5, 0.05, -0.373361, 0.5, 0, -0.438, -0.5, 0.05, 0.37063017, -0.12509787, 0, 0.49990818, 0.5, 0.05, -0.373361, 0.5, 0, 0.4352692, -0.12509787, 0.05, 0.4352692, 0.12490213, 0, 0.49990818, 0.5, 0.05, 0.37063017, 0.12490213, 0.05, 0.4352692)
+
+[node name="crops_dirtdoublerow" type="StaticBody3D" unique_id=1410130831]
+
+[node name="crops_dirtDoubleRow2" parent="." unique_id=1896726506 instance=ExtResource("1_g8rd6")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1316180685]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.05, 0)
+shape = SubResource("ConvexPolygonShape3D_0w2t1")

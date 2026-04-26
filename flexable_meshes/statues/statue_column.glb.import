@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://cgum2gslmhf1n"
-path="res://.godot/imported/statue_columnDamaged.glb-63f90dcea4fb9f471693122e12d72b4a.scn"
+uid="uid://ctxjl1w4fyqha"
+path="res://.godot/imported/statue_column.glb-7396c58891d2b033a0f651d135aa4436.scn"
 
 [deps]
 
-source_file="res://assets/kenney_nature_kit/statue_columnDamaged.glb"
-dest_files=["res://.godot/imported/statue_columnDamaged.glb-63f90dcea4fb9f471693122e12d72b4a.scn"]
+source_file="res://flexable_meshes/statues/statue_column.glb"
+dest_files=["res://.godot/imported/statue_column.glb-7396c58891d2b033a0f651d135aa4436.scn"]
 
 [params]
 

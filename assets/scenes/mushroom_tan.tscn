@@ -5,6 +5,9 @@
 [sub_resource type="BoxShape3D" id="BoxShape3D_wug1i"]
 size = Vector3(0.09559631, 0.05883789, 0.09458923)
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_0ys0c"]
+size = Vector3(0.18961716, 0.08995819, 0.22296143)
+
 [node name="mushroom_tan" type="StaticBody3D" unique_id=1511044702]
 
 [node name="mushroom_tan2" parent="." unique_id=2001397621 instance=ExtResource("1_0ys0c")]
@@ -12,3 +15,7 @@ size = Vector3(0.09559631, 0.05883789, 0.09458923)
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=85489455]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00012636185, -0.016479492, -8.392334e-05)
 shape = SubResource("BoxShape3D_wug1i")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="." unique_id=1865989082]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0010814667, 0.0581398, 0.0058288574)
+shape = SubResource("BoxShape3D_0ys0c")
