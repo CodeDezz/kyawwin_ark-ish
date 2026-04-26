@@ -1,0 +1,72 @@
+[gd_scene format=3 uid="uid://bncx4y0wtsxp8"]
+
+[ext_resource type="Script" uid="uid://dqie65uj2hpmm" path="res://scripts/main_menu.gd" id="1_uu6ob"]
+
+[node name="MainMenu" type="CenterContainer" unique_id=843664875]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -108.0
+offset_top = -138.99998
+offset_right = -17.41504
+offset_bottom = -98.999985
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(2.595, 2.595)
+script = ExtResource("1_uu6ob")
+
+[node name="PanelContainer" type="PanelContainer" parent="." unique_id=1241811011]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=866994508]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="Title Label" type="Label" parent="VBoxContainer" unique_id=1597028429]
+layout_mode = 2
+text = "Main Menu"
+
+[node name="Play Button" type="Button" parent="VBoxContainer/Title Label" unique_id=1257166683]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -19.95183
+offset_top = 20.577068
+offset_right = 21.048172
+offset_bottom = 51.57707
+grow_horizontal = 2
+grow_vertical = 2
+text = "Play"
+
+[node name="Options Button" type="Button" parent="VBoxContainer/Title Label" unique_id=1228737395]
+layout_mode = 0
+offset_left = 12.102115
+offset_top = 62.905582
+offset_right = 82.10211
+offset_bottom = 93.90558
+text = "Options"
+
+[node name="Quit Button" type="Button" parent="VBoxContainer/Title Label" unique_id=1810005519]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -19.95183
+offset_top = 82.23411
+offset_right = 22.048172
+offset_bottom = 113.23411
+grow_horizontal = 2
+grow_vertical = 2
+text = "Quit"
+
+[connection signal="pressed" from="VBoxContainer/Title Label/Play Button" to="." method="_on_play_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/Title Label/Options Button" to="." method="_on_options_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/Title Label/Quit Button" to="." method="_on_quit_button_pressed"]

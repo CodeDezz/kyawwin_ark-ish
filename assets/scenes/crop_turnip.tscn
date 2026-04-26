@@ -12,8 +12,6 @@ height = 0.1376648
 
 [node name="crop_turnip" type="StaticBody3D" unique_id=1321414771]
 script = ExtResource("1_qwgym")
-prompt_message = null
-prompt_input = null
 
 [node name="crop_turnip2" parent="." unique_id=766058594 instance=ExtResource("1_g73ot")]
 
